@@ -1,8 +1,9 @@
 #include<iostream>
 #include<unordered_map>
+#include<bits/stdc++.h>
 using namespace std;
 unordered_map<string,string>database;
-class BankApplication{
+class BankApplication {
     public:
     static int count;
     //Encapsulation
@@ -40,7 +41,7 @@ class BankApplication{
         if(database[this->BankId]!=psswd) return "ACCESS DENIED";
         else return this->MobileNo;
     }
-     string getBankId(string psswd)
+    string getBankId(string psswd)
     {
         if(database[this->BankId]!=psswd) return "ACCESS DENIED";
         else return this->BankId;
